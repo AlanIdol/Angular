@@ -1,0 +1,30 @@
+<nav>
+
+  <style>
+  .btn-group button {
+    background-color: #4CAF50; /* Green background */
+    border: 1px solid green; /* Green border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: center; /* Float the buttons side by side */
+  }
+  </style>
+
+
+  <div class="btn-group" style="width:100% ">
+    <button style="width:33%" routerLink="/posteos" routerLinkActive="active">Inicio </button>
+    <button style="width:33%" routerLink="/perfiles" routerLinkActive="active">Perfiles </button>
+    <button style="width:33%" routerLink="/usuarios" routerLinkActive="active">Usuarios </button>
+
+  </div>
+</nav>
+
+<h2 align="center">Usuarios</h2>
+<ul  class="usuarios">
+  <li align="center" *ngFor="let usuario of usuarios">
+    <div class="boxed">
+    <h1><span class="badge">{{usuario.id}}</span> {{usuario.name}}</h1>
+    </div>
+  </li>
+</ul>

@@ -1,0 +1,6 @@
+
+.boxed {
+  border: 1px solid green ;
+  border-radius: 20px ;
+  background-color: #cfc ;
+}

@@ -1,0 +1,32 @@
+<nav>
+
+  <style>
+  .btn-group button {
+    background-color: #4CAF50; /* Green background */
+    border: 1px solid green; /* Green border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: center; /* Float the buttons side by side */
+  }
+  </style>
+
+
+  <div class="btn-group" style="width:100% ">
+    <button style="width:33%" routerLink="/posteos" routerLinkActive="active">Inicio </button>
+    <button style="width:33%" routerLink="/perfiles" routerLinkActive="active">Perfiles </button>
+    <button style="width:33%" routerLink="/usuarios" routerLinkActive="active">Usuarios </button>
+
+  </div>
+</nav>
+
+
+
+<ul class="cards">
+
+  <li class="card">
+    <h1> </h1>
+    {{usuario.id}}
+  {{posteo.texto}}
+  </li>
+</ul>
